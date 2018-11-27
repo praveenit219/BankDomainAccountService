@@ -1,0 +1,9 @@
+# image not found? login using "docker login --username=abc --password=abc https://registry.domain.de"
+services: 
+  pheonix-bankdomainaccountservice: 
+    container_name: pheonix-bankdomainaccountservice
+    image: "praveenit219/pheonix-bankdomainaccountservice:latest"
+    network_mode: host
+    ports: 
+      - "10855:10855"
+version: "3"
